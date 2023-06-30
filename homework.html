@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Data Form</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 250px;
+        padding: 5px;
+      }
+
+      input[type="submit"] {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>User Data Form</h2>
+    <form id="userDataForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="homework.js"></script>
+  </body>
+</html>
