@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Objects</title>
+  </head>
+  <body>
+    <div id="users"></div>
+
+    <button id="button">Print Names</button>
+
+    <script>
+      var usersData = [
+        {
+          name: "Mitanshi",
+          city: "New Delhi",
+          age: 22,
+        },
+        {
+          name: "Priti",
+          city: "Ghaziabad",
+          age: 22,
+        },
+        {
+          name: "Mansi",
+          city: "Kashmir",
+          age: 25,
+        },
+      ];
+
+      var div = document.getElementById("users");
+      var button = document.getElementById("button");
+
+      button.addEventListener("click", function () {
+        var names = "";
+        for (var i = 0; i < usersData.length; i++) {
+          names += "<h1>" + usersData[i].name + "</h1>";
+        }
+
+        div.innerHTML = names;
+      });
+    </script>
+  </body>
+</html>

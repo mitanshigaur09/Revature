@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>div demo</title>
+    <style>
+      div {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+      perferendis veniam doloribus est. Voluptatem, asperiores repellat
+      consequuntur, praesentium deleniti ipsum nemo nostrum provident molestiae
+      accusamus exercitationem repellendus assumenda, illo maxime.
+    </div>
+    <script>
+      var myDiv = document.getElementById("myDiv");
+
+      myDiv.addEventListener("click", function () {
+        this.innerHTML = "I got clicked";
+        this.style.backgroundColor = "pink";
+      });
+    </script>
+  </body>
+</html>

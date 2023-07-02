@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Homework</title>
+    <style>
+      div {
+        width: 150px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="firstDiv"></div>
+    <div id="secondDiv"></div>
+    <div id="thirdDiv"></div>
+    <div id="fourthDiv"></div>
+    <script>
+      var firstDiv = document.getElementById("firstDiv");
+      var secondDiv = document.getElementById("secondDiv");
+      var thirdDiv = document.getElementById("thirdDiv");
+      var fourthDiv = document.getElementById("fourthDiv");
+
+      firstDiv.addEventListener("click", function () {
+        this.style.backgroundColor = "green";
+      });
+
+      secondDiv.addEventListener("mouseenter", function () {
+        this.style.backgroundColor = "blue";
+      });
+
+      thirdDiv.addEventListener("click", function () {
+        this.style.backgroundImage =
+          "url(photo-1575936123452-b67c3203c357.jpg)";
+      });
+
+      fourthDiv.addEventListener("click", function () {
+        this.style.width = "200px";
+        this.style.height = "200px";
+      });
+    </script>
+  </body>
+</html>
